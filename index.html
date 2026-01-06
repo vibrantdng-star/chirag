@@ -1,28 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Videos</title>
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    video {
-      width: 100%;
-      max-width: 600px;
-      margin-bottom: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Page</title>
+
+<style>
+  body {
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+</style>
 </head>
+
 <body>
 
-<video controls src="video1.mp4"></video>
-<video controls src="video2.mp4"></video>
-<video controls src="video3.mp4"></video>
-<video controls src="video4.mp4"></video>
+<div class="video-container">
+  <video controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="video-container">
+  <video controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="video-container">
+  <video controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="video-container">
+  <video controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+</div>
 
 </body>
 </html>

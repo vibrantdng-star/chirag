@@ -8,7 +8,9 @@
 <style>
   body {
     margin: 0;
-    background-color: #000;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,21 +18,30 @@
 
   .video-container {
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
+    max-width: 420px;
+    margin-bottom: 40px;
   }
 
   h2 {
-    color: white;
     margin: 10px 0;
     font-size: 18px;
-    text-align: left;
+    color: white;
   }
 
-  video {
+  .video-wrapper {
+    position: relative;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    padding-top: 177.78%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
   }
 </style>
 </head>
@@ -38,31 +49,44 @@
 <body>
 
 <div class="video-container">
-<h2>Video 1</h2>
-  <video controls>
-    <source src="video1.mp4" type="video/mp4">
-  </video>
+  <h2>Video 1</h2>  
+  <div class="video-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/1kRfVNy9UJMpFUpiBToR3LkUgzXr9GsJ6/view"
+      allow="autoplay"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 <div class="video-container">
-<h2>Video 2</h2>
-  <video controls>
-    <source src="video1.mp4" type="video/mp4">
-  </video>
+  <h2>Video 2</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/1zzN5fWuAGWORguH0DlbPOGAvGlX8edgN/view"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 <div class="video-container">
-<h2>Video 3</h2>
-  <video controls>
-    <source src="video1.mp4" type="video/mp4">
-  </video>
+  <h2>Video 3</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/1qHI2o5LvY6biyXAvkdfZzJ2Idg5bt6_V/view"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 <div class="video-container">
-<h2>Video 4</h2>
-  <video controls>
-    <source src="video1.mp4" type="video/mp4">
-  </video>
+  <h2>Video 4</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/1c9nErzBApSghu-u_wDaf9y68AiBynJvG/view"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 </body>
